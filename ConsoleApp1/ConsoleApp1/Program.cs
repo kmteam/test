@@ -14,6 +14,8 @@ namespace ConsoleApp1
             {
                 SayHello();
             } while (Console.ReadKey().Key != ConsoleKey.Q );
+
+	    Console.WriteLine("Bye!");
         }
 
         private static void SayHello() {
