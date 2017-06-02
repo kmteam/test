@@ -10,9 +10,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi world!");
-
-            var key = Console.ReadKey();
+            do
+            {
+                Console.WriteLine("Hi world!");
+            } while (Console.ReadKey().Key != ConsoleKey.Q );
         }
     }
 }
