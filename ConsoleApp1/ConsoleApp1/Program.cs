@@ -14,6 +14,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine("Hi world!");
             } while (Console.ReadKey().Key != ConsoleKey.Q );
+
+	    Console.WriteLine("Bye!");
         }
     }
 }
