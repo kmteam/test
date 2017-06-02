@@ -12,8 +12,12 @@ namespace ConsoleApp1
         {
             do
             {
-                Console.WriteLine("Hi world!");
+                SayHello();
             } while (Console.ReadKey().Key != ConsoleKey.Q );
+        }
+
+        private static void SayHello() {
+            Console.WriteLine("Hi world!");
         }
     }
 }
