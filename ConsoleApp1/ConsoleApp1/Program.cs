@@ -10,16 +10,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+			String sName=String.Empty;
+			
+			Console.WriteLine("Type your name :");
+			sName = Console.ReadLine();
+			
             do
             {
-                SayHello();
+                SayHello(sName);
             } while (Console.ReadKey().Key != ConsoleKey.Q );
 
-	    Console.WriteLine("Bye!");
+			Console.WriteLine("Bye!");
         }
 
-        private static void SayHello() {
-            Console.WriteLine("Hi world!");
+        private static void SayHello(String sName) {
+            Console.WriteLine("Hi '{0}'",sName);
         }
     }
 }
