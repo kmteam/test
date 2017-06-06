@@ -8,6 +8,9 @@ namespace ConsoleApp1
 {
     class Program
     {
+		/// <summary>
+		/// Main method
+		/// </summary>
         static void Main(string[] args)
         {
 			String sName=String.Empty;
@@ -24,10 +27,16 @@ namespace ConsoleApp1
 			Console.WriteLine("Bye!");
         }
 
+		/// <summary>
+		/// Says Hello message to somebody
+		/// </summary>
         private static void SayHello(String sName) {
             Console.WriteLine("Hi '{0}'",sName);
         }
 
+		/// <summary>
+		/// Ensure name is first letter capitalized.
+		/// </summary>
         private static String CapitalizeName(String Name) {
 
             if (String.IsNullOrWhiteSpace(Name)) {
