@@ -33,9 +33,9 @@ namespace ConsoleApp1
             if (String.IsNullOrWhiteSpace(Name)) {
                 return Name;
             }
-            String tmp = Name.ToLower();
-            tmp = tmp.Substring(0, 1).ToUpper() + tmp.Substring(1, tmp.Length - 1);
-            return tmp;
+            String capName = Name.ToLower();
+            capName = capName.Substring(0, 1).ToUpper() + capName.Substring(1, capName.Length - 1);
+            return capName;
         }
     }
 }
